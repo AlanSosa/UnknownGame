@@ -48,15 +48,12 @@ function love.update(dt)
 	cam:translate(SCROLL_SPEED * dt , 0 )
 	cam:update()
 	player:update(dt)
-
-
 	--player.bullets.update()
 end
 
 function love.draw()
 	-- push:apply('start')
 	-- map:render()
-	
 	cam:push()
 		-- By default, translation is half camera width, half camera height
 		-- So this draws a rectangle at the center of the screen.
@@ -70,10 +67,10 @@ function love.draw()
 		end
 
 		cam:push( 'close' )
-			love.graphics.rectangle( 'fill', 100, 0, 64, 64 )
+			love.graphics.setColor(255,0,0)
+			love.graphics.rectangle( 'fill', 100, -60, 64, 200 )
+			love.graphics.setColor(255,255,255)
 		cam:pop( 'close' )
-
-		
 	cam:pop()
 	-- love.graphics.setColor(255,255,255)	
 	
