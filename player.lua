@@ -56,8 +56,8 @@ function player:update(dt)
 	--self.position.x = util:clamp(self.limitXA, self.position.x, self.limitXB - self.TEXTURE:getWidth())
 	--self.position.y = util:clamp(0, self.position.y, 480 - self.TEXTURE:getHeight())
 
-	print("x : " .. self.position.x)
-	print("y : " .. self.position.y)
+	--print("x : " .. self.position.x)
+	--print("y : " .. self.position.y)
 	
 end
 
